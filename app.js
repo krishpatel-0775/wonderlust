@@ -91,9 +91,9 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 
-// app.get("/", (req, res) => {
-//     res.send("Hi, I am root");
-// });
+app.get("/", (req, res) => {
+    res.redirect("/listing");
+});
 
 app.use((req, res, next) => {
     res.locals.success = req.flash("success");
