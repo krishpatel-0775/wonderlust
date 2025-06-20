@@ -92,7 +92,7 @@ passport.deserializeUser(User.deserializeUser());
 
 
 app.get("/", (req, res) => {
-    res.redirect("/listing");
+    res.redirect("/listings");
 });
 
 app.use((req, res, next) => {
